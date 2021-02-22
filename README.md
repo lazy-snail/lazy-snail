@@ -1,43 +1,157 @@
-nimo-markdown-cv
-================
+---
+layout: cv
+title: Wode "Nimo" Ni
+email:
+  url: mailto:woden@cs.cmu.edu
+  text: woden@cs.cmu.edu
+homepage:
+  url: http://cs.cmu.edu/~woden
+  text: cs.cmu.edu/~woden
+---
 
-<p align="center">
-<img src="assets/README-63bf9.png" width="700">
-</p>
+# Wode **Ni**
 
-A curriculum vitae template that lets you write your cv in Markdown and supports both HTML and PDF output formats. To generate the cv, we use [Jekyll](https://jekyllrb.com/).
+<!--
+include contact information from the front matter
+Supported arguments:
+    - homepage: url, text
+    - phone
+    - email
+-->
 
-The project is a fork from [markdown-cv](http://elipapa.github.io/markdown-cv) and the usage is essentially the same. We only provide an alternative styling theme.
+{% include cv-contact.html %}
 
-See Live example of this template [here](http://wodenimoni.com/nimo-markdown-cv/).
+## Education
 
-***
+### **Carnegie Mellon University** `2018.9 -`
 
-## Getting started
+```
+Pittsburgh, PA
+```
 
-To start, simply [fork the nimo-markdown-cv repo](https://github.com/wodeni/nimo-markdown-cv)
+- Ph.D. in Software Engineering
+- Co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html) and [Josh Sunshine](http://www.cs.cmu.edu/~jssunshi/)
 
-![](https://help.github.com/assets/images/help/repository/fork_button.jpg)
+### **Columbia University** `2016.9 - 2018.5`
 
-Your resume content will be contained in `index.md`, which has an example cv. Start by modifying `index.md`! To see the result, you have two options:
+```
+New York, NY
+```
 
-## Using Github Pages to publish it online
+- B.S. in Computer Science, _Magna Cum Laude_
+- Vision, Graphics track
 
-1. Go to *Settings* of you git repo. ![](assets/README-5d16f.png)
-2. In the *Github Pages* section, choose *master branch*, which will automatically build your cv and serve it on your free GitHub Pages website. ![](assets/README-0669e.png)
-3. Head to *yourusername*.github.io/nimo-markdown-cv to see your beautiful CV.
+### **Dickinson College** `2013.9 - 2016.5`
 
-Any change you want to make to your CV from then on would have to be done on the `master` branch and will be immediately rendered by Github Pages.
+```
+Carlisle, PA
+```
 
-## Build it locally and print a PDF
+- B.S. in Computer Science, _Summa Cum Laude_
+- Computer Science Departmental Honors
 
-1. [install jekyll](https://jekyllrb.com/docs/installation/) on your computer. `gem install jekyll` will do for most users.
-2. Clone your fork on your computer
-3. Type `jekyll serve` and you'll be able to see your CV on your local host (the default address is http://localhost:4000).
-4. You can edit the `index.md` file and see changes live in your browser.
-5. To print a PDF, just press *Print*. Print and web CSS media queries should take care of the styling.
+## Publications
 
-## Generating PDFs in one command
+### [**Penrose: From Mathematical Notation to Beautiful Diagrams**](http://penrose.ink/media/Penrose_SIGGRAPH2020.pdf)
+Katherine Ye, **Wode Ni**, Max Krieger, Dor Ma'ayan, Joshua Sunshine, Jonathan Aldrich, and Keenan Crane.<br> 
+_ACM Transactions on Graphics (SIGGRAPH'20)._<br>
+[[PDF](http://penrose.ink/media/Penrose_SIGGRAPH2020.pdf)]
+[[BibTeX]({{ page.homepage.url }}/assets/siggraph20-penrose.txt)]
+[[www](http://penrose.ink/siggraph20.html)]
+[[repo](https://github.com/penrose/penrose)]
 
-You can optionally integrate [jekyll-pdf](https://github.com/abeMedia/jekyll-pdf) to the package and automatically generate the PDF along with the HTML version. See more instructions in the [repo](https://github.com/abeMedia/jekyll-pdf). As of 02/07/2019, `jekyll-pdf` does not work well with this repo.
+### [**How Domain Experts Create Conceptual Diagrams and Implications for Tool Design**]({{ page.homepage.url }}/assets/chi-20-natural-diagramming.pdf)
 
+Dor Ma'ayan\*, **Wode Ni\***, Katherine Ye, Chinmay Kulkarni, and Joshua Sunshine.<br>
+<i class="fas fa-award"></i> <strong>Best Paper Honourable Mention</strong><br>
+_In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI'20)._<br>
+[[PDF]({{ page.homepage.url }}/assets/chi-20-natural-diagramming.pdf)]
+[[BibTeX]({{ page.homepage.url }}/assets/chi-20-natural-diagramming.txt)]
+
+### [**Defining Visual Narratives for Mathematics Declaratively**](http://plateau-workshop.org/assets/papers-2019/9.pdf)
+
+Max Krieger, **Wode Ni**, and Joshua Sunshine.<br>
+_Evaluation and Usability of Programming Languages and Tools (PLATEAU 2019), co-located with UIST._<br>
+[[PDF](http://plateau-workshop.org/assets/papers-2019/9.pdf)]
+[[slides]({ page.homepage.url }}/aassets/plateau-19-presentation.pdf)]
+
+### [**Designing Declarative Language Tutorials: a Guided and Individualized Approach**](http://plateau-workshop.org/assets/papers-2019/2.pdf)
+
+Anael Kuperwajs Cohen, **Wode Ni**, and Joshua Sunshine.<br>
+_Evaluation and Usability of Programming Languages and Tools (PLATEAU 2019), co-located with UIST._<br>
+[[PDF](http://plateau-workshop.org/assets/papers-2019/2.pdf)]
+[[slides]({{ page.homepage.url }}/assets/plateau-19-presentation.pdf)]
+
+### [**Substance and Style: domain-specific languages for mathematical diagrams**](https://2017.splashcon.org/event/dsldi-2017-substance-and-style-domain-specific-languages-for-mathematical-diagrams)
+
+**Wode Ni\***, Katherine Ye\*, Joshua Sunshine, Jonathan Aldrich, and Keenan Crane.<br> _Domain-Specific Language Design and Implementation (DSLDI 2017), co-located with SPLASH._ <br>
+[[PDF]({{ page.homepage.url }}/assets/dsldi.pdf)]
+[[slides]({{ page.homepage.url }}/assets/dsldi-presentation.pdf)]
+[[www](http://penrose.ink)]
+[[repo](https://github.com/penrose/penrose)]
+
+---
+
+### [**Whiteboard Scanning Using Super-Resolution**](http://scholar.dickinson.edu/student_honors/221/)
+
+**Wode Ni**.<br> _Dickinson College Honors Theses. Paper 221._<br>
+[[PDF]({{ page.homepage.url }}/assets/superres.pdf)]
+
+## Experience
+
+### **Microsoft Research** `2020.5 -`
+
+_Research Intern_<br>
+
+### **Carnegie Mellon University, Research Experiences for Undergraduate** `2017.5 - 2017.8`
+
+_Research Assistant_<br>
+**Penrose** is a system that automatically visualizes mathematics using two domain-specific languages: **Substance** and **Style**. Co-advised by [Jonathan Aldrich](https://www.cs.cmu.edu/~./aldrich/), [Keenan Crane](https://www.cs.cmu.edu/~kmcrane/), [Joshua Sunshine](http://www.cs.cmu.edu/~jssunshi/), and [Katherine Ye](https://www.cs.cmu.edu/~kqy/), I designed and implemented the Style language, and extended the Substance language to support functions and logically quantified statements.
+
+### **Columbia University, Computer Graphics and User Interfaces Lab** `2017.1 - 2017.5`
+
+_Research Assistant_<br>
+Worked with prof. Steven Feiner, on **Cyber Affordance Visualization in Augumented Reality** project. Developed a Microsoft Hololens application that visualizes the Columbia campus in AR environment.
+
+### **AsiaInfo** `2015.6 - 2015.8`
+
+_Software Engineering Intern_<br>
+Worked on server-side web applications and server deployment tools.
+
+## Mentoring
+
+Max Krieger (CMU, independent research & [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2018 - Now` <br>
+Courtney Miller (New College of Florida, [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2019` <br>
+Anael Kuperwajs Cohen (Macalester College, [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2019` <br>
+
+## Honors & Awards
+
+CHI'20 Best Paper Honourable Mention Award `CMU, 2020` <br>
+Phi Beta Kappa `Dickinson, 2018` <br>
+Excellence in Computer Science Award `Columbia, 2018` <br>
+Travel Award PL Mentoring Workshop (PLMW) `SPLASH, 2018` <br>
+Tau Beta Pi, Engineering Honor Society `Columbia, 2017` <br>
+Computer Science Departmental Honors `Dickinson, 2016` <br>
+Pi Mu Epsilon, Mathematics Honor Society `Dickinson, 2016` <br>
+Upsilon Pi Epsilon, Computer Science Honor Society `Dickinson, 2016` <br>
+Alpha Lambda Delta, First year Honor Society `Dickinson, 2013`<br>
+John Montgomery Scholarship `Dickinson, 2013` <br>
+
+---
+
+## Teaching
+
+Teaching Assistant, **Programming Languages and Translators (COMS 4115)** `Columbia, 2017 - 2018` <br>
+Teaching Assistant, **Introduction to Java II (COMP 132)** `Dickinson, 2016` <br>
+Peer Tutor, **Data Structures and Problem Solving (COMP 232)** `Dickinson, 2016` <br>
+Computer Lab Consultant `Dickinson, 2014 - 2016` <br>
+
+
+## Service
+
+Reviewer `CHI 2021`
+Research Experiences for Undergraduates in Software Engineering Admission Committee `CMU, 2019 - 2020`
+
+<!-- ### Footer
+
+Last updated: May 2013 -->
